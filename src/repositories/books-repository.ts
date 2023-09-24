@@ -8,7 +8,7 @@ export async function getBooks():Promise<Book[]> {
 }
 
 export async function getBook(id: number):Promise<Book> {
-	const result = await prisma.book.findUnique({where:{id}})
+	const result = await prisma.book.findUnique({where:{id:55}})
 	return result;
 }
 
